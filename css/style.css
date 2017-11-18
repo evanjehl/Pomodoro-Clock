@@ -1,0 +1,83 @@
+body {
+  background-color:black;
+  font-family:helvetica;
+  color:white;
+  position:relative;
+  text-align:center;
+}
+#main {
+  position:relative;
+  padding-right:200px;
+  padding-left:200px;
+}
+#heading {
+  font-size:50pt;
+  margin-top:50px
+}
+.parameters {
+  position:relative;
+  top:50px;
+}
+.adjust {
+  text-align:center;
+}
+button {
+  background-color:transparent;
+  color:white;
+  height:40px;
+  width:40px;
+}
+
+.length {
+  font-size:20pt;
+}
+.btn {
+  position:relative;
+}
+
+.btn:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.timer {
+  font-size:40pt;
+  text-align:center;
+}
+
+#start-stop {
+  height:275px;
+  width:275px;
+  border-radius:50%;
+  border-color:white;
+  position:relative;
+  left:20px;
+}
+
+#fill {
+  z-index:-2;
+  height:269px;
+  width:269px;
+  border-radius:50%;
+  position:absolute;
+  top:2px;
+  right:2px;
+  background-color:red;
+}
+#fill2 {
+  position:absolute;
+  height:269px;
+  width:269px;
+  top:2px;
+  right:2px;
+  z-index:-1;
+  background-color:black;
+}
+
+#reset {
+  position:relative;
+  font-size:25pt;
+  text-align:center;
+  top:175px;
+  right:190px;
+}

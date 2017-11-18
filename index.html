@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Clock</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div id='main'>
+  <h1 class='text-center' id='heading'>
+    TIMER
+  </h1>
+  <div class='container parameters'>
+    <div class='row'>
+      <div class='col-md-3'>
+      </div>
+      <div class='col-md-3 adjust' id='break'>
+        BREAK LENGTH
+      </div>
+      <div class='col-md-3 adjust' id='session'>
+        SESSION LENGTH
+      </div>
+      <div class='col-md-3'>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-md-3'>
+      </div>
+      <div class='col-md-1'>
+        <button class='btn' onclick='change("break-length", "decrease")' id='break-length-decrease'>
+          –
+        </button>
+      </div>
+      <div class='col-md-1 length' id='break-length'>
+      </div>
+      <div class='col-md-1'>
+      <button class='btn' onclick='change("break-length", "increase")' id='break-length-increase'>
+          +
+      </button>
+      </div>
+      <div class='col-md-1'>
+        <button class='btn' onclick='change("session-length", "decrease")' id='session-length-decrease'>
+          –
+        </button>
+      </div>
+      <div class='col-md-1 length' id='session-length'>
+      </div>
+      <div class='col-md-1'>
+      <button class='btn' onclick='change("session-length", "increase")' id='session-length-increase'>
+          +
+      </button>
+      </div>
+    </div>
+    <button class='btn' id='start-stop'>
+      <div id='fill'>
+      </div>
+      <div id='fill2'>
+      </div>
+      <div class='timer' id='current-state'>
+      </div>
+      <div class='timer' id='time'>
+      </div>
+    </button>
+    <button class='btn' id='reset'>
+      RESET
+    </button>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
